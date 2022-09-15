@@ -25,7 +25,24 @@ body {
   position: relative;
 }
 
-.icons-space > svg {
+.hills-pattern-space {
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
+
+.social-icons-space {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2.5rem;
+} 
+
+.social-icons-space svg:hover {
+  filter: invert(58%) sepia(8%) saturate(5438%) hue-rotate(304deg) brightness(95%) contrast(107%);
+  cursor: pointer;
+}
+
+
