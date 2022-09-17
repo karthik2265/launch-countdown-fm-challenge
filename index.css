@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;700&display=swap');
 
 :root {
   --Grayish-blue: hsl(237, 18%, 59%);
@@ -15,6 +15,8 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+/* background images styleing and positioning */
 
 body {
   font-size: 14px;
@@ -53,4 +55,44 @@ body {
   cursor: pointer;
 }
 
+/* timer styling and positioning */
+
+#App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer-space {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: max-content;
+}
+
+.box {
+  text-align: center;
+}
+
+.box span {
+  color: var(--Soft-red);
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.box h3 {
+  color: var(--Grayish-blue);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+
+h1 {
+  color: var(--White);
+  font-size: 1.25rem;
+  letter-spacing: 8px;
+  margin: 5rem 0;
+}
 
