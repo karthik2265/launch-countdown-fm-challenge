@@ -3,10 +3,10 @@ const body = document.getElementById("App");
 body.style.height = window.innerHeight + "px";
 
 const timer = {
-  days: 1,
-  hours: 0,
-  minutes: 1,
-  seconds: 10,
+  days: 8,
+  hours: 23,
+  minutes: 44,
+  seconds: 18,
 };
 
 setInterval(() => updateTime(timer), 1000);
