@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .box {
@@ -112,6 +113,7 @@ body {
   width: 100%;
   height: 50%;
   z-index: 1;
+  border-bottom: 1px solid hsla(21, 10%, 53%, 0.08);
 }
 
 .box .lower {
@@ -120,7 +122,7 @@ body {
   height: 50%;
   bottom: 0;
   z-index: 1;
-  border-top: 3px solid hsla(21, 10%, 53%, 0.08);
+  border-top: 1px solid hsla(21, 10%, 53%, 0.08);
 }
 
 .box-wrapper {
@@ -151,4 +153,32 @@ h1 {
   font-size: 1.25rem;
   letter-spacing: 8px;
   margin: 5rem 0;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 550px) {
+
+  #App h1 {
+    text-align: center;
+    margin: 9rem 0 5rem 0;
+  }
+
+  #timer-space {
+    gap: 1rem;
+  }
+
+  .box {
+    width: 65px;
+  }
+
+  .box span {
+    font-size: 1.45rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .box-wrapper h3 {
+    font-size: 0.4rem;
+  }
 }
