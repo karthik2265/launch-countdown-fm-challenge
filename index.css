@@ -73,14 +73,40 @@ body {
 
 .box {
   position: relative;
+  border-radius: 8px;
+}
+
+.box::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--Very-dark-mostly-black-blue);
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.box::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--Very-dark-mostly-black-blue);
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  z-index: 3;
 }
 
 .box > div {
   background-color: var(--Dark-desaturated-blue);
-  border-radius: 8px;
 }
 
-.upper {
+.box .upper {
   position: absolute;
   width: 100%;
   height: 50%;
